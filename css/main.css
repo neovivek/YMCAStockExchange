@@ -1,0 +1,114 @@
+body{
+	top: 0px;
+	margin: 0px;
+	padding: 0px; 
+	background: url('/img/cg_2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.lead2{display: none;}
+.masthead{
+position: relative;
+max-height: 42px;
+padding: 0 98px;
+background-image: -webkit-linear-gradient(top,#7DCFE8 0,#215F94 100%);
+background-image: -o-linear-gradient(top,#7DCFE8 0,#215F94 100%);
+background-image: -webkit-gradient(linear,left top,left bottom,from(#7DCFE8),to(#215F94));
+background-image: linear-gradient(to bottom,#7DCFE8 0,#215F94 100%);
+}
+h3{
+margin: 10px 0;
+text-align: center;
+color: white;
+}
+.carousel{
+	position: absolute;
+	z-index: -1;
+	overflow: hidden;
+}
+.jumbotron{
+background: rgba(0, 0, 0, 0.47);
+color: rgb(179, 240, 0);
+}
+.container{
+position: relative;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px;
+  }
+}
+.container .jumbotron {
+	text-align: center;
+}
+.btn{
+	width: 100%;
+}
+.btn-warning{
+float: right;
+padding: 5px 88px;
+margin: 5px 0;
+font-size: 21px;
+}
+@media(max-width: 677px){
+	.btn-warning{
+		float: none ;
+	}
+}
+@media (min-width: 768px){
+	.container{padding: 37px 0;}
+	.btn{width: auto;}
+}
+@media (max-width: 570px){
+	.lead{display: none;}
+	.lead2{display: block;}
+	.jumbotron{margin: -15px;}
+}
+.signup-form{
+padding: 0px;
+width: inherit;
+}
+#recover-active{
+font-size: 15px;
+margin: 0;
+}
+.divider {
+height: 1px;
+margin: 9px 0;
+overflow: hidden;
+background-color: #e5e5e5;
+}
+.dropdown-header{
+font-size: 14px;
+color: #070707;
+}
+.red{color: red;}
+.green{color: green;}
+.signup-form> .form-group> .form-control-feedback {
+top: 0;
+}
+#log-sign{
+top: 50px;
+padding-bottom: 0;
+}
+
+form > div > textarea{
+	max-width: 568px;
+}
+a{
+cursor: pointer;
+}
+.modal-body>form>.form-group>textarea{
+resize: none;
+min-height: 134px;}
+
+::-webkit-scrollbar { width: 4px; height: 3px;}
+::-webkit-scrollbar-button {  background-color: #8EAAC5; }
+::-webkit-scrollbar-track {  background-color: #999;}
+::-webkit-scrollbar-track-piece { background-color: #fff;}
+::-webkit-scrollbar-thumb { height: 50px; background-color: #8EAAC5; border-radius: 5px;}
+::-webkit-scrollbar-corner { background-color: #8EAAC5;}}
+::-webkit-resizer { background-color: #666;}

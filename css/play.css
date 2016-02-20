@@ -1,0 +1,64 @@
+@media(min-width: 768px){ 
+	.container{ max-width: 950px; }
+	.container .jumbotron.jumbotron-sidebar {
+	width: 25%;
+	float: left;
+	padding: 1px;
+	}
+	.data{
+		width: 74%;
+		float: right;
+	}
+}
+
+.comp {
+padding: 11px 3px;
+font-family: serif;
+font-size: 19px;
+background-color: white;
+color: #0C2B4A;
+margin: 2px 1px;
+border-radius: 3px;
+cursor: pointer;
+font-weight: bold;
+}
+.jumbotron{
+	color: white;
+	background: rgba(6, 48, 90, 0.75);
+	box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+div#ex4 {
+margin-left: -34px;
+}
+.container .jumbotron:first-child{
+	padding: 1px;
+}
+.t7 {
+font-family: sans-serif;
+font-size: 26px;
+font-weight: bold;
+color: #345;
+text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.reply {
+border: 1px solid #DDDEDF;
+padding: 6px 16px;
+margin: 8px 0px;
+font-family: sans-serif;
+font-size: 17px;
+}
+p.sloc {
+margin-bottom: 4px;
+}
+.content {
+margin: 19px 0px;
+font-family: sans-serif;
+font-size: 18px;
+}
+.reply{
+	display: none;
+}
+.sloc.name {
+font-weight: bold;
+padding: 5px 25px;
+}

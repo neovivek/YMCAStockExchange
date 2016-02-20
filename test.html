@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['corechart']}]}"></script>
+  <style type="text/css">
+  body{ margin: 0; }
+  </style>
+  <div id="ex4"></div>
+  <script type="text/javascript">
+
+  google.load('visualization', '1', {packages: ['corechart']});
+  google.setOnLoadCallback(drawChart);
+  $.ajaxSetup({ cache: false });
+
+  function drawChart() {
+    var jsonData = $.ajax({
+      url: "/php/getData.php",
+      dataType:"json",
+      async: false
+    }).responseText;
+    var data = new google.visualization.DataTable(jsonData, 0.6);
+
+    var options = {
+      width: 650,
+      height: 263,
+      title: 'Zensex Index',
+      hAxis: {title: 'Time',
+        textStyle: { color: '#01579b', fontSize: 16, fontName: 'Arial', bold: true },
+        titleTextStyle: { color: '#01579b', fontSize: 16, fontName: 'Arial', bold: true }
+      },
+      vAxis: {
+        textStyle: { color: '#1a237e', fontSize: 16, fontName: 'Arial', bold: true }
+      },
+      colors: ['#a52714']
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('ex4'));
+
+    chart.draw(data, options);
+  }
+    
+  </script>
+</body>
+</html>
